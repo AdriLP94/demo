@@ -36,5 +36,5 @@ public interface PostClient {
 	public Post updatePost(@PathVariable Integer id, @RequestBody Post post);
 	
 	@DeleteMapping("/posts/{id}")
-	public Post deletePost(@PathVariable Integer id);
+	public void deletePost(@PathVariable Integer id);
 }

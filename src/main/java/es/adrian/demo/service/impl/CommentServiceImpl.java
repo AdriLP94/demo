@@ -48,8 +48,8 @@ public class CommentServiceImpl implements CommentService{
 	}
 
 	@Override
-	public Comment deleteComment(Integer id) {
-		return commentClient.deleteComment(id);
+	public void deleteComment(Integer id) {
+		commentClient.deleteComment(id);
 	}
 
 }

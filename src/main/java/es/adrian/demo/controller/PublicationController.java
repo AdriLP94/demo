@@ -44,7 +44,7 @@ public class PublicationController {
 	}
 	
 	@DeleteMapping("/publications/{id}")
-	public Publication deletePublication(@PathVariable Integer id) {
-		return publicationService.deletePublicationByPostId(id);
+	public void deletePublication(@PathVariable Integer id) {
+		publicationService.deletePublicationByPostId(id);
 	}
 }

@@ -39,5 +39,5 @@ public interface CommentClient {
 	public Comment updateComment(@PathVariable Integer id, @RequestBody Comment comments);
 	
 	@DeleteMapping("/comments/{id}")
-	public Comment deleteComment(@PathVariable Integer id); 
+	public void deleteComment(@PathVariable Integer id); 
 }

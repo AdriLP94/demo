@@ -11,5 +11,5 @@ public interface CommentService {
 	public List<Comment> getByCriteria(Integer id, Integer postId, String name, String email, String body);
 	public Comment addComment(Comment comment);
 	public Comment updateComment(Integer id, Comment comment);
-	public Comment deleteComment(Integer id);
+	public void deleteComment(Integer id);
 }

@@ -10,6 +10,6 @@ public interface PublicationService {
 	public Publication getPublicationByPostId(Integer id);
 	public Publication addPublication(Publication publication);
 	public Publication updatePublicationByPostId(Integer id, Publication publication);
-	public Publication deletePublicationByPostId(Integer id);
+	public void deletePublicationByPostId(Integer id);
 
 }

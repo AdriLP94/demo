@@ -43,8 +43,8 @@ public class PostServiceImpl implements PostService{
 	}
 
 	@Override
-	public Post deletePost(Integer id) {
-		return postClient.deletePost(id);
+	public void deletePost(Integer id) {
+		postClient.deletePost(id);
 	}
 
 }

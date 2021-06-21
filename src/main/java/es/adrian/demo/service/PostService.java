@@ -10,5 +10,5 @@ public interface PostService {
 	public List<Post> getByCriteria(Integer id, Integer userId, String title, String body);
 	public Post addPost(Post post);
 	public Post updatePost(Integer id, Post post);
-	public Post deletePost( Integer id);
+	public void deletePost( Integer id);
 }

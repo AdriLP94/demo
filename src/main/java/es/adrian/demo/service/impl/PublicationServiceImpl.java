@@ -76,18 +76,14 @@ public class PublicationServiceImpl implements PublicationService{
 	}
 
 	@Override
-	public Publication deletePublicationByPostId(Integer id) {
+	public void deletePublicationByPostId(Integer id) {
 		
-		Publication publication = new Publication();
-		publication.setComments(commentService.getByPostId(id));
-		
-		for (Comment comment : publication.getComments()) {
+		for (Comment comment : commentService.getByPostId(id)) {
 			commentService.deleteComment(comment.getId());
 		}
 		
-		publication.setPost(postService.deletePost(id));
+		postService.deletePost(id);
 		
-		return publication;
 	}
 	
 }
